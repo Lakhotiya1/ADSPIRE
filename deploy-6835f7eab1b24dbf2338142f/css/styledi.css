@@ -1,0 +1,107 @@
+/* ✅ Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ✅ Navbar Styling */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff416c;
+}
+
+/* ✅ Fix for Overlap Issue */
+body {
+    padding-top: 70px; /* Navbar ke neeche jagah dene ke liye */
+}
+
+/* ✅ Disclaimer Page Styling */
+#disclaimer {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #ff416c;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* ✅ Footer Styling */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-links a {
+    color: #ff416c;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* ✅ Responsive Fix */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    #disclaimer {
+        padding: 15px;
+        width: 95%;
+    }
+}
